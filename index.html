@@ -40,18 +40,74 @@
             </li>
           </ul>
         </address>
-        <button class="burger-button" type="button">
+        <button class="burger-button" type="button" data-menu-open>
           <svg class="burger-button-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="close-button" type="button" data-menu-close>
+            <svg class="modal-button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item"><a class="mobile-nav-link current-page" href="./index.html">Studio</a></li>
+              <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Portfolio</a></li>
+              <li class="mobile-nav-item"><a class="mobile-nav-link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a class="mobile-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mobile-address-item">
+                <a class="mobile-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a class="socials-link" href="">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a class="socials-link" href="">
+                <svg class="socials-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="purple-button" type="button">Order Service</button>
+          <button class="purple-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="section advantages">
@@ -452,9 +508,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-button" type="button">
+        <button class="close-button" type="button" data-modal-close>
           <svg class="modal-button-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -499,12 +555,14 @@
               ><span class="custom-checkbox"
                 ><svg class="custom-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use></svg></span
-              >I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a></label
+              ><span>I accept the terms and conditions of the <a href="" class="privacy-policy-link">Privacy Policy</a></span></label
             >
           </div>
           <button class="purple-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
