@@ -164,6 +164,10 @@ img {
   margin-bottom: 48px;
 }
 
+.mobile-address-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .mobile-address-link {
   display: inline-block;
   font-weight: 500;
@@ -176,7 +180,6 @@ img {
 
 .mobile-address-item:first-child .mobile-address-link {
   color: #4d5ae5;
-  margin-bottom: 24px;
 }
 
 .mobile-menu .socials-list {
@@ -185,7 +188,7 @@ img {
 
 .section.hero {
   padding: 72px 0;
-  max-width: 1440px;
+  max-width: 320px;
   margin: 0 auto;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mob.jpg);
@@ -203,7 +206,7 @@ img {
 .hero-title {
   max-width: 216px;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -407,17 +410,12 @@ img {
   gap: 72px;
 }
 
-.footer-info {
-  margin-right: 120px;
-}
-
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-text {
-  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -710,7 +708,12 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .header-logo {
+    padding: 16px 0;
+  }
+
   .footer-logo {
+    padding: 0;
     display: block;
     text-align: center;
   }
@@ -741,6 +744,7 @@ img {
 
   .modal {
     width: 288px;
+    padding: 72px 16px 24px;
   }
 
   .privacy-policy-label {
@@ -832,7 +836,12 @@ img {
     display: none;
   }
 
+  .mobile-menu {
+    display: none;
+  }
+
   .section.hero {
+    max-width: 768px;
     padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-tab.jpg);
   }
@@ -846,6 +855,7 @@ img {
   .hero-title {
     max-width: 496px;
     font-size: 56px;
+    margin-bottom: 36px;
   }
 
   .advantages-list,
@@ -871,6 +881,10 @@ img {
   .team-list {
     gap: 64px 24px;
   }
+
+  .footer-info {
+    max-width: 264px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -879,15 +893,11 @@ img {
   }
 
   .footer-container {
-    margin-left: 108px;
+    padding-left: 108px;
   }
 }
 
-@media screen and (max-width: 1156px) {
-  .footer-info {
-    margin-right: unset;
-  }
-
+@media screen and (max-width: 1157px) {
   .footer-form-wrapper {
     margin-left: unset;
   }
@@ -924,6 +934,7 @@ img {
   }
 
   .section.hero {
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
   }
@@ -932,6 +943,10 @@ img {
     .section.hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@2x.jpg);
     }
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
   }
 
   .advantages-list {
@@ -979,5 +994,13 @@ img {
 
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
+
+  .footer-container {
+    gap: 0;
+  }
+
+  .footer-info {
+    margin-right: 120px;
   }
 }
